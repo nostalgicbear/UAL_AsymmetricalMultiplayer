@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.ual_asymmetricalmultiplayer.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\UAL_Lecturing\\Projects\\UAL_AsymmetricalMultiplayer\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "UAL_AsymmetricalMultiplayer [Testing]"
+        }
+      }
+    }
+  ]
+}
