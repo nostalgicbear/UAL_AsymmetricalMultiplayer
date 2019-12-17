@@ -26,6 +26,23 @@ public class UIController : MonoBehaviour {
     public Transform slideableWall;
     Vector3 startValue;
     public GameObject slider;
+
+
+    public GameObject panel1,panel2;
+
+    #region second puzzle
+    public GameObject textField;
+
+    public GameObject nonVRPlayerPuzzle1, nonVRPlayerPuzzle2;
+    public GameObject letMeBeYourEyes;
+
+    public Text inputtedCode;
+
+    private string code = "85966";
+
+    public GameObject victoryText;
+
+    #endregion
     private void Start()
     {
         startValue = slideableWall.position;
@@ -48,6 +65,30 @@ public class UIController : MonoBehaviour {
     public void EnableSlider()
     {
         slider.SetActive(true);
+    }
+
+    public void EnableSecondPuzzle()
+    {
+        panel1.SetActive(false);
+        panel2.SetActive(false);
+        
+        
+        textField.SetActive(true);
+        letMeBeYourEyes.SetActive(false);
+        slider.SetActive(false);
+
+
+        nonVRPlayerPuzzle1.SetActive(false);
+        nonVRPlayerPuzzle2.SetActive(true);
+
+    }
+
+    public void ValidateCode()
+    {
+        if(inputtedCode.text == code)
+        {
+            victoryText.SetActive(true);
+        }
     }
 
    
